@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Classic and Retro */
+$malibu: #8ED3F4;
+$catskill-white: #E4EBF2;
+$astral: #328DAA;
+$natural-gray: #8A8683;
+$don-juan: #5A4D4C;
+
+$primary: $natural-gray;
+$info: $astral;
+
+@import '../node_modules/bulma/bulma.sass';
+// @import '../node_modules/quill/dist/quill.core.css';
+// @import '../node_modules/quill/dist/quill.bubble.css';
+// @import '../node_modules/quill/dist/quill.snow.css';
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
