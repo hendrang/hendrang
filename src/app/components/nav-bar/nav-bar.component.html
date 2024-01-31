@@ -6,12 +6,13 @@
             <img class="is-rounded" src="/assets/logos/hendra_h.svg">
           </a>
         </figure>
-        <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
+        <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false"
+        [ngClass]="{ 'is-active': isActive }" (click)="toggle()">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu" [ngClass]="{ 'is-active': isActive }" (click)="toggle()">
         <div class="navbar-end">
-          <a class="navbar-item" routerLink="/resume">Resume</a>
+          <a class="navbar-item" routerLink="resume">Resume</a>
           <a class="navbar-item" (click)="openBlog()">Blog</a>
         </div>
       </div>
